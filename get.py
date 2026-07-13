@@ -4,7 +4,6 @@ from urllib.parse import urlparse
 def get(url):
     
     p = urlparse(url)
-    #print(p.path)
     if p.scheme=="https":
         if p.port:
             port=p.port
@@ -59,4 +58,4 @@ def get(url):
     else:
         raise ValueError("Invalid or unexpected scheme")
 
-get("https://example.com/") 
+#get("https://example.com/") 
