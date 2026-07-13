@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 def get(url):
     
     p = urlparse(url)
-    print(p.path)
+    #print(p.path)
     if p.scheme=="https":
         if p.port:
             port=p.port
